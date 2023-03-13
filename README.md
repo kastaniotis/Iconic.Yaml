@@ -1,4 +1,4 @@
-# Yaml Loader
+# ![<Logo>](https://raw.githubusercontent.com/kastaniotis/Iconic.Yaml/master/icon.png) Yaml Loader
 
 [![.NET](https://github.com/kastaniotis/Iconic.Yaml/actions/workflows/dotnet.yml/badge.svg)](https://github.com/kastaniotis/Iconic.Yaml/actions/workflows/dotnet.yml) 
 [![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/kastaniotis/Iconic.Yaml?color=%2331c854&label=Version%20&sort=semver)](https://github.com/kastaniotis/Iconic.Yaml/releases) 
@@ -45,3 +45,7 @@ to the time of initialization, and make retrieving operations more performant.
 ## TODO
 
 Work on improving performance and decrease the cpu/memory footprint
+
+## Acknowledgements
+
+Icons are courtesy of the [Noun Project](https://thenounproject.com/)

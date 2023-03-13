@@ -6,14 +6,18 @@
         <Nullable>enable</Nullable>
         <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
         <Title>Iconic.Yaml</Title>
-        <Version>1.0.0</Version>
+        <Version>1.0.0-beta</Version>
         <Authors>Kastaniotis Dimitris</Authors>
         <Company>Iconic</Company>
         <Description>A ligthweight and easy to use library that allows loading yaml files and getting values based on paths</Description>
-        <PackageTags>yaml;configuration;</PackageTags>
+        <PackageTags>yaml;configuration;parser</PackageTags>
         <PackageReleaseNotes>Initial release</PackageReleaseNotes>
         <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
         <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageProjectUrl>https://github.com/kastaniotis/Iconic.Yaml</PackageProjectUrl>
+        <PackageIcon>icon.png</PackageIcon>
+        <RepositoryUrl>https://github.com/kastaniotis/Iconic.Yaml</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
     </PropertyGroup>
 
     <ItemGroup>
@@ -28,6 +32,10 @@
     </ItemGroup>
 
     <ItemGroup>
+      <None Update="icon.png">
+        <Pack>True</Pack>
+        <PackagePath>\</PackagePath>
+      </None>
       <None Update="LICENSE.md">
         <Pack>True</Pack>
         <PackagePath>\</PackagePath>
