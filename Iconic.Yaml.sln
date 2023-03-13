@@ -10,10 +10,6 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Iconic.Yaml.Benchmarks", "Iconic.Yaml.Benchmarks\Iconic.Yaml.Benchmarks.csproj", "{117580CA-F74A-464A-ACBF-FBE84466A955}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0A51202E-ACB0-43A5-B7A3-425A6108C0A5}"
-	ProjectSection(SolutionItems) = preProject
-		Iconic.Yaml\LICENSE.md = Iconic.Yaml\LICENSE.md
-		Iconic.Yaml\README.md = Iconic.Yaml\README.md
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
