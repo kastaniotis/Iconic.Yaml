@@ -1,4 +1,4 @@
-# ![<Logo>](https://raw.githubusercontent.com/kastaniotis/Iconic.Yaml/master/icon.png) Yaml Loader
+# <img src="https://github.com/kastaniotis/Iconic.Yaml/raw/master/Iconic.Yaml/icon.png" style="width:35px;vertical-align:bottom;"> Yaml Loader
 
 [![.NET](https://github.com/kastaniotis/Iconic.Yaml/actions/workflows/dotnet.yml/badge.svg)](https://github.com/kastaniotis/Iconic.Yaml/actions/workflows/dotnet.yml) 
 [![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/kastaniotis/Iconic.Yaml?color=%2331c854&label=Version%20&sort=semver)](https://github.com/kastaniotis/Iconic.Yaml/releases) 
