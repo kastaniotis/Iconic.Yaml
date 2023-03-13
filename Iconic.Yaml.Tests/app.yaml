@@ -1,5 +1,5 @@
 ﻿database:
-  motosales:
+  motosales: 
     name: motosales
     port: 3306
 dobo:
