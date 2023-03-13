@@ -11,6 +11,7 @@ public class GenericBenchmarks
         _configuration = new YamlLoader();
         _configuration.Load("app.yaml");
     }
+
     [Benchmark]
     public void Init()
     {
@@ -23,4 +24,16 @@ public class GenericBenchmarks
     {
         var test = _configuration.Get("database:motosales:name");
     }
+
+    [Benchmark]
+    public void GetSmall()
+    {
+        var test = _configuration.Get("d:m:p");
+    }
+
+    [Benchmark]
+    public void GetLarge()
+    {
+        var test = _configuration.Get("dobo:mobo:nomo:master:paster:puppets:metallica");
+    }    
 }

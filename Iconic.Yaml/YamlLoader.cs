@@ -47,14 +47,13 @@ public class YamlLoader
                 }
                 catch (ArgumentException)
                 {
-                    throw new YamlException($"The application requested a yaml file that defines an element" +
-                                            " that already exists: {filename}");
+                    throw new YamlException($"The application requested a yaml file that defines an element that already exists: [{fileName}]");
                 }
             }
         }
         catch (FileNotFoundException)
         {
-            throw new YamlException($"The application requested a yaml file that does not exist: {fileName}");
+            throw new YamlException($"The application requested a yaml file that does not exist: [{fileName}]");
         }
     }
 
@@ -71,7 +70,7 @@ public class YamlLoader
         }
         catch (KeyNotFoundException)
         {
-            throw new YamlException($"The application requested a yaml element that does not exist {path}");
+            throw new YamlException($"The application requested a yaml element that does not exist: [{path}]");
         }
     }
 }
