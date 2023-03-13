@@ -6,7 +6,6 @@ public class YamlLoader
     private const int Spaces = 2;
     private const string AssignmentDelimiter = ":";
     private const char PathDelimiter = '.';
-
     private readonly Dictionary<string, string> _elements = new();
 
     public void Clear()
