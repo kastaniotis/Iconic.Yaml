@@ -1,4 +1,9 @@
 # Yaml Loader
+
+[![.NET](https://github.com/kastaniotis/Iconic.Yaml/actions/workflows/dotnet.yml/badge.svg)](https://github.com/kastaniotis/Iconic.Yaml/actions/workflows/dotnet.yml) 
+[![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/kastaniotis/Iconic.Yaml?color=%2331c854&label=Version%20&sort=semver)](https://github.com/kastaniotis/Iconic.Yaml/releases) 
+[![Nuget](https://img.shields.io/nuget/v/Iconic.Yaml)](https://www.nuget.org/packages/Iconic.Yaml/)
+
 A library that allows loading of yaml files and getting values based on paths
 
 It is meant as a lightweight and easy to use alternative to YamlDotNet and the Configuration framework.  
