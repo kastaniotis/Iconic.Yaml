@@ -32,9 +32,9 @@
     </ItemGroup>
 
     <ItemGroup>
-      <None Update="icon.png">
-        <Pack>True</Pack>
+      <None Update="icon_th.png">
         <PackagePath>\</PackagePath>
+        <Pack>True</Pack>
       </None>
       <None Update="LICENSE.md">
         <Pack>True</Pack>
