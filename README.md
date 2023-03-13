@@ -30,8 +30,8 @@ to avoid leaking business logic all over framework glue-code
 var configuration = new YamlLoader();
 configuration.Load("app.yaml");
 configuration.Load("log.yaml");
-var dbpass = configuration.Get("database:motosales:name");
-var dbport = configuration.Get("database:motosales:port");
+var dbpass = configuration.Get("database.motosales.name");
+var dbport = configuration.Get("database.motosales.port");
 var logMode = configuration.Get("log.mode");
 ```
 
