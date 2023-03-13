@@ -5,6 +5,7 @@ public class YamlLoader
 {
     private const int Spaces = 2;
     private const string AssignmentDelimiter = ":";
+    private const char PathDelimiter = '.';
 
     private readonly Dictionary<string, string> _elements = new();
 
@@ -52,7 +53,7 @@ public class YamlLoader
             var alias = new StringBuilder();
             for (var i = 0; i < depth; i++)
             {
-                alias.Append(hierarchy[i]).Append(':');
+                alias.Append(hierarchy[i]).Append(PathDelimiter);
             }
 
             try

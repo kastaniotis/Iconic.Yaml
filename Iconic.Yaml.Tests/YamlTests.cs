@@ -15,9 +15,9 @@ public class YamlTests
     [TestMethod]
     public void GetValues()
     {
-        var dbname = configuration.Get("database:motosales:name");
+        var dbname = configuration.Get("database.motosales.name");
         Assert.AreEqual("motosales", dbname);
-        var dbport = configuration.Get("database:motosales:port");
+        var dbport = configuration.Get("database.motosales.port");
         Assert.AreEqual("3306", dbport);
     }
 
@@ -41,12 +41,12 @@ public class YamlTests
     {
         try
         {
-            var asd = configuration.Get("database:motosales:asd");
+            var asd = configuration.Get("database.motosales.asd");
         }
         catch (Exception e)
         {
             Assert.AreEqual(typeof(YamlException), e.GetType());
-            Assert.AreEqual($"The application requested a yaml element that does not exist: [database:motosales:asd]", e.Message);
+            Assert.AreEqual($"The application requested a yaml element that does not exist: [database.motosales.asd]", e.Message);
         }
     }
 
