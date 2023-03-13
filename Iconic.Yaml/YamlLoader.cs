@@ -1,11 +1,13 @@
-﻿namespace Iconic.Yaml;
+﻿using System.Text;
+
+namespace Iconic.Yaml;
 public class YamlLoader
 {
     private const int Spaces = 2;
-    private const string AssignmentDelimiter = ": ";
+    private const string AssignmentDelimiter = ":";
 
-    private Dictionary<string, string> _elements = new();
-
+    private readonly Dictionary<string, string> _elements = new();
+    
     public void Load(string fileName)
     {
         try
@@ -15,40 +17,38 @@ public class YamlLoader
             var hierarchy = new List<string>();
             foreach (var line in lines)
             {
-                int depth = (line.Length - line.TrimStart().Length)/Spaces;
-                var parts = line.Split(AssignmentDelimiter);
-                var name = parts[0].Trim();
-                var value = "";
-                if (parts.Length > 1)
-                {
-                    value = parts[1].Trim();
-                }
+                var delimiterPosition = line.IndexOf(AssignmentDelimiter, StringComparison.Ordinal);
+                if (delimiterPosition <= -1) continue; //All valid lines have the delimiter in yaml
+                
+                var span = line.AsSpan();
+                var depth = GetElementDepth(span);
+                    
+                var name = span[..delimiterPosition].Trim();
+                var value = span[(delimiterPosition+1)..].Trim();
 
                 while (hierarchy.Count <= depth)
                 {
-                    hierarchy.Add("");
+                    hierarchy.Add(string.Empty);
                 }
 
-                hierarchy[depth] = name;
+                hierarchy[depth] = name.ToString();
 
-                if (value != "")
+                if (value.IsEmpty) continue; //If there's no value, we won't assign an element
+                var alias = new StringBuilder();
+                for (var i = 0; i < depth; i++)
                 {
-                    var alias = "";
-                    for (var i = 0; i < depth; i++)
-                    {
-                        alias += hierarchy[i];
-                    }
+                    alias.Append(hierarchy[i]).Append(':');
+                }
 
-                    try
-                    {
-                        _elements.Add(alias + name, value);
-                    }
-                    catch (ArgumentException )
-                    {
-                        throw new YamlException($"The application requested a yaml file that defines an element" +
-                                                " that already exists: {filename}");
-                    }
-                    
+                try
+                {
+                    alias.Append(name);
+                    _elements.Add(alias.ToString(), value.ToString());
+                }
+                catch (ArgumentException)
+                {
+                    throw new YamlException($"The application requested a yaml file that defines an element" +
+                                            " that already exists: {filename}");
                 }
             }
         }
@@ -56,6 +56,11 @@ public class YamlLoader
         {
             throw new YamlException($"The application requested a yaml file that does not exist: {fileName}");
         }
+    }
+
+    private static int GetElementDepth(ReadOnlySpan<char> line)
+    {
+        return (line.Length - line.TrimStart().Length)/Spaces;
     }
 
     public string Get(string path)

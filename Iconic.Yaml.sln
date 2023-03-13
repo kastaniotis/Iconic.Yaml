@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iconic.Yaml", "Iconic.Yaml\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iconic.Yaml.Tests", "Iconic.Yaml.Tests\Iconic.Yaml.Tests.csproj", "{39EE5F18-62E2-4117-8869-809E2E08FDC9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iconic.Yaml.Benchmarks", "Iconic.Yaml.Benchmarks\Iconic.Yaml.Benchmarks.csproj", "{117580CA-F74A-464A-ACBF-FBE84466A955}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{39EE5F18-62E2-4117-8869-809E2E08FDC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39EE5F18-62E2-4117-8869-809E2E08FDC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39EE5F18-62E2-4117-8869-809E2E08FDC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{117580CA-F74A-464A-ACBF-FBE84466A955}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{117580CA-F74A-464A-ACBF-FBE84466A955}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{117580CA-F74A-464A-ACBF-FBE84466A955}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{117580CA-F74A-464A-ACBF-FBE84466A955}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
