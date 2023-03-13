@@ -35,5 +35,6 @@ public class GenericBenchmarks
     public void GetLarge()
     {
         var test = _configuration.Get("dobo:mobo:nomo:master:paster:puppets:metallica");
-    }    
+    }
+
 }

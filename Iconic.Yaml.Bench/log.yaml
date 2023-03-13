@@ -1,0 +1,3 @@
+﻿log:
+  mode: debug
+  file: xml.log

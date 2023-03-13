@@ -12,7 +12,7 @@ then you should use YamlDotNet and the Configuration Framework.
 
 The library does not validate files and does not support the entire Yaml specification (for example arrays).  
 
-__NOTE__ Only simple values are supported
+**Only simple values are supported**
 
 ## Validation
 
@@ -29,3 +29,14 @@ var dbpass = configuration.Get("database:motosales:name");
 var dbport = configuration.Get("database:motosales:port");
 var logMode = configuration.Get("log.mode");
 ```
+
+## Performance
+
+Smaller keys are retrieved faster
+
+The library is not yet optimized for performance, however it was designed to front-load expensive operations
+to the time of initialization, and make retrieving operations more performant.
+
+## TODO
+
+Work on improving performance and decrease the cpu/memory footprint

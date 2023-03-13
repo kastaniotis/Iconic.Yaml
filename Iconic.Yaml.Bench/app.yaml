@@ -1,0 +1,20 @@
+﻿database:
+  motosales:
+    name: motosales
+dobo:
+  mobo:
+    nomo:
+      master:
+        paster:
+           puppets: 
+             metallica: guitar
+              
+    port: 3306
+    tests:
+      test2: 3
+    fest3: 23
+
+d:
+  m:
+    p: 1234
+    
