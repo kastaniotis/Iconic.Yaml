@@ -1,10 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iconic.Yaml", "Iconic.Yaml\Iconic.Yaml.csproj", "{D665521E-C577-4424-8957-B100F6FF185B}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33424.131
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Iconic.Yaml", "Iconic.Yaml\Iconic.Yaml.csproj", "{D665521E-C577-4424-8957-B100F6FF185B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iconic.Yaml.Tests", "Iconic.Yaml.Tests\Iconic.Yaml.Tests.csproj", "{39EE5F18-62E2-4117-8869-809E2E08FDC9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Iconic.Yaml.Tests", "Iconic.Yaml.Tests\Iconic.Yaml.Tests.csproj", "{39EE5F18-62E2-4117-8869-809E2E08FDC9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iconic.Yaml.Benchmarks", "Iconic.Yaml.Benchmarks\Iconic.Yaml.Benchmarks.csproj", "{117580CA-F74A-464A-ACBF-FBE84466A955}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Iconic.Yaml.Benchmarks", "Iconic.Yaml.Benchmarks\Iconic.Yaml.Benchmarks.csproj", "{117580CA-F74A-464A-ACBF-FBE84466A955}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0A51202E-ACB0-43A5-B7A3-425A6108C0A5}"
+	ProjectSection(SolutionItems) = preProject
+		Iconic.Yaml\LICENSE.md = Iconic.Yaml\LICENSE.md
+		Iconic.Yaml\README.md = Iconic.Yaml\README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,5 +33,11 @@ Global
 		{117580CA-F74A-464A-ACBF-FBE84466A955}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{117580CA-F74A-464A-ACBF-FBE84466A955}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{117580CA-F74A-464A-ACBF-FBE84466A955}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D7A70B55-F76D-4CC8-ACC7-A5C218B8EAB9}
 	EndGlobalSection
 EndGlobal
